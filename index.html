@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNN Prediction</title>
+</head>
+<body>
+    <h2>Enter Features for KNN Prediction (Iris Dataset)</h2>
+    <form method="post">
+        <label>Sepal Length: <input type="number" name="feature1" step="any" required></label><br><br>
+        <label>Sepal Width: <input type="number" name="feature2" step="any" required></label><br><br>
+        <label>Petal Length: <input type="number" name="feature3" step="any" required></label><br><br>
+        <label>Petal Width: <input type="number" name="feature4" step="any" required></label><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <h3>Prediction Result: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
