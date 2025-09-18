@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # Load the saved KNN model
-model_path = 'train.pkl.py'
+model_path = 'train.pkl'
 model = joblib.load(model_path)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -35,6 +35,7 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
