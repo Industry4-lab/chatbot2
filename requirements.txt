@@ -1,4 +1,6 @@
 flask==3.0.3
+sklearn
 numpy
 joblib
 gunicorn
+
