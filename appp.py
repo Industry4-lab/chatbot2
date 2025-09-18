@@ -31,10 +31,11 @@ def index():
         except Exception as e:
             prediction = f"Error: {str(e)}"
 
-    return render_template('template/index.html', prediction=prediction)
+    return render_template('index.html', prediction=prediction)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
